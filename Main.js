@@ -32,7 +32,7 @@ if (sonuc) {
     const musteri = new Musteri(isim, soyisim, sonuc, urunler);
     odenecekTutar = musteri.hesapla();
 
-    alert(`Müşteri Bilgileri: ${isim} ${soyisim}
+    alert(`Müşteri Bilgileri: ${musteri.getIsim()} ${musteri.getSoyisim()}
         Ödenecek Tutar: ${odenecekTutar}
     `);
 } else {
